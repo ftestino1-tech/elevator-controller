@@ -1,0 +1,2 @@
+python test_elevator.py
+gtkwave elevator.vcd elevator.gtkw

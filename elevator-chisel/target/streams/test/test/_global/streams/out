@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(elevator.ElevatorControllerTest, org.scalatest.tools.Framework$$anon$1@16ad60f5, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mElevatorControllerTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mElevatorController[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should initialize in idle state[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should move up when requested[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should move down when requested[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should open doors at target floor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle emergency stop[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 3 seconds, 644 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 5, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	elevator.ElevatorControllerTest[0m

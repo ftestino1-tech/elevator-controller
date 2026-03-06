@@ -1,0 +1,1 @@
+gtkwave simWorkspace/ElevatorController/test/wave.vcd

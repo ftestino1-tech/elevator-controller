@@ -1,0 +1,1 @@
+gtkwave test_run_dir/ElevatorController_should_move_up_when_requested/ElevatorController.vcd

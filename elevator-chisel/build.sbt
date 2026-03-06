@@ -1,0 +1,20 @@
+ThisBuild / scalaVersion := "2.13.12"
+ThisBuild / version      := "0.1.0"
+
+lazy val root = (project in file("."))
+  .settings(
+    name := "elevator-chisel",
+    libraryDependencies ++= Seq(
+      "org.chipsalliance" %% "chisel"     % "6.5.0",
+      "edu.berkeley.cs"   %% "chiseltest" % "6.0.0" % Test
+    ),
+    scalacOptions ++= Seq(
+      "-language:reflectiveCalls",
+      "-deprecation",
+      "-feature",
+      "-Xcheckinit"
+    ),
+    addCompilerPlugin(
+      "org.chipsalliance" % "chisel-plugin" % "6.5.0" cross CrossVersion.full
+    )
+  )
