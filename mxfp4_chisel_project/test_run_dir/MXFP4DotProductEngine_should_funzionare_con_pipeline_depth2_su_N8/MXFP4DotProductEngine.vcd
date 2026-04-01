@@ -1,0 +1,747 @@
+$date
+2026-03-31T09:37+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module MXFP4DotProductEngine $end
+ $var wire 9 6 io_combinedScale $end
+ $var wire 1 | clock $end
+ $var wire 1 "; multipliers_1 $end
+ $var wire 1 "= multipliers_2 $end
+ $var wire 1 "? multipliers_3 $end
+ $var wire 1 "@ multipliers_4 $end
+ $var wire 1 "A multipliers_0 $end
+ $var wire 1 "B multipliers_5 $end
+ $var wire 1 "C multipliers_6 $end
+ $var wire 1 "E multipliers_7 $end
+ $var wire 1 "h aligner $end
+ $var wire 1 "j scaleIntegrator $end
+ $var wire 1 "u reset $end
+ $var wire 1 #& adderTree $end
+ $var wire 8 #. io_scaleA $end
+ $var wire 8 #/ io_scaleB $end
+ $var wire 4 #3 io_vecB_5 $end
+ $var wire 4 #4 io_vecB_4 $end
+ $var wire 4 #5 io_vecB_7 $end
+ $var wire 4 #6 io_vecB_6 $end
+ $var wire 4 #7 io_vecB_1 $end
+ $var wire 4 #8 io_vecB_0 $end
+ $var wire 4 #9 io_vecB_3 $end
+ $var wire 4 #: io_vecB_2 $end
+ $var wire 11 #H io_dotProduct $end
+ $var wire 4 #N io_vecA_6 $end
+ $var wire 4 #O io_vecA_5 $end
+ $var wire 4 #P io_vecA_7 $end
+ $var wire 4 #R io_vecA_2 $end
+ $var wire 4 #S io_vecA_1 $end
+ $var wire 4 #T io_vecA_4 $end
+ $var wire 4 #V io_vecA_3 $end
+ $var wire 4 #W io_vecA_0 $end
+  $scope module multipliers_1 $end
+   $var wire 1 @ mantB $end
+   $var wire 1 A mantA $end
+   $var wire 1 U io_sign $end
+   $var wire 4 ] io_a $end
+   $var wire 4 ^ io_b $end
+   $var wire 1 "% signB $end
+   $var wire 1 "& signA $end
+   $var wire 3 "D io_expOut $end
+   $var wire 2 "k mantEffB $end
+   $var wire 2 "l mantEffA $end
+   $var wire 4 #) io_mantOut $end
+   $var wire 2 #, expA $end
+   $var wire 2 #- expB $end
+   $var wire 1 #Q isZeroB $end
+   $var wire 1 #U isZeroA $end
+  $upscope $end
+  $scope module multipliers_2 $end
+   $var wire 4 ! io_a $end
+   $var wire 4 # io_b $end
+   $var wire 3 $ io_expOut $end
+   $var wire 2 G mantEffA $end
+   $var wire 2 H mantEffB $end
+   $var wire 1 x signB $end
+   $var wire 1 z signA $end
+   $var wire 4 } io_mantOut $end
+   $var wire 1 ~ io_sign $end
+   $var wire 2 "( expB $end
+   $var wire 2 ") expA $end
+   $var wire 1 "2 isZeroA $end
+   $var wire 1 "3 isZeroB $end
+   $var wire 1 "d mantB $end
+   $var wire 1 "f mantA $end
+  $upscope $end
+  $scope module multipliers_3 $end
+   $var wire 4 . io_mantOut $end
+   $var wire 1 \ io_sign $end
+   $var wire 1 n isZeroB $end
+   $var wire 1 o isZeroA $end
+   $var wire 2 t mantEffA $end
+   $var wire 2 u mantEffB $end
+   $var wire 4 "/ io_a $end
+   $var wire 4 "0 io_b $end
+   $var wire 3 "8 io_expOut $end
+   $var wire 1 "L signB $end
+   $var wire 1 "N signA $end
+   $var wire 1 "X mantB $end
+   $var wire 1 "_ mantA $end
+   $var wire 2 "o expA $end
+   $var wire 2 "p expB $end
+  $upscope $end
+  $scope module multipliers_4 $end
+   $var wire 1 1 mantB $end
+   $var wire 1 2 mantA $end
+   $var wire 1 3 signA $end
+   $var wire 1 4 signB $end
+   $var wire 3 5 io_expOut $end
+   $var wire 2 8 expB $end
+   $var wire 2 9 expA $end
+   $var wire 1 I io_sign $end
+   $var wire 1 y isZeroB $end
+   $var wire 1 { isZeroA $end
+   $var wire 4 "5 io_b $end
+   $var wire 4 "7 io_a $end
+   $var wire 2 #* mantEffB $end
+   $var wire 2 #+ mantEffA $end
+   $var wire 4 #G io_mantOut $end
+  $upscope $end
+  $scope module scaleIntegrator $end
+   $var wire 11 L io_dotProduct $end
+   $var wire 9 g io_combinedScale $end
+   $var wire 8 r io_scaleB $end
+   $var wire 8 s io_scaleA $end
+   $var wire 11 "q io_treeSum $end
+  $upscope $end
+  $scope module adderTree $end
+   $var wire 13 ; io_result_nextLevel_sum $end
+   $var wire 11 = io_result $end
+   $var wire 13 E io_result_nextLevel_sum_1 $end
+   $var wire 14 F io_result_nextLevel_sum_2 $end
+   $var wire 13 V io_result_nextLevel_1_1 $end
+   $var wire 13 "" io_result_nextLevel_0_1 $end
+   $var wire 14 "# io_result_nextLevel_0_2 $end
+   $var wire 8 "P io_inputs_6 $end
+   $var wire 8 "Q io_inputs_5 $end
+   $var wire 8 "R io_inputs_4 $end
+   $var wire 8 "S io_inputs_3 $end
+   $var wire 8 "T io_inputs_2 $end
+   $var wire 8 "U io_inputs_1 $end
+   $var wire 8 "V io_inputs_0 $end
+   $var wire 8 "W io_inputs_7 $end
+   $var wire 1 "r clock $end
+   $var wire 12 "x io_result_nextLevel_3 $end
+   $var wire 12 "y io_result_nextLevel_1 $end
+   $var wire 12 "z io_result_nextLevel_2 $end
+   $var wire 11 "{ extInputs_0 $end
+   $var wire 11 "| extInputs_2 $end
+   $var wire 11 "} extInputs_1 $end
+   $var wire 11 "~ extInputs_4 $end
+   $var wire 11 #" extInputs_3 $end
+   $var wire 12 ## io_result_nextLevel_0 $end
+   $var wire 11 #$ extInputs_6 $end
+   $var wire 11 #% extInputs_5 $end
+   $var wire 11 #C extInputs_7 $end
+  $upscope $end
+  $scope module multipliers_0 $end
+   $var wire 3 + io_expOut $end
+   $var wire 2 B expA $end
+   $var wire 2 C expB $end
+   $var wire 1 "* signA $end
+   $var wire 1 "+ signB $end
+   $var wire 2 ", mantEffA $end
+   $var wire 2 "- mantEffB $end
+   $var wire 1 "9 mantA $end
+   $var wire 1 ": mantB $end
+   $var wire 4 "a io_a $end
+   $var wire 4 "g io_b $end
+   $var wire 4 "i io_mantOut $end
+   $var wire 1 "v io_sign $end
+   $var wire 1 #' isZeroB $end
+   $var wire 1 #( isZeroA $end
+  $upscope $end
+  $scope module multipliers_5 $end
+   $var wire 4 R io_mantOut $end
+   $var wire 4 l io_b $end
+   $var wire 4 m io_a $end
+   $var wire 1 "F mantB $end
+   $var wire 1 "G mantA $end
+   $var wire 1 "Z signB $end
+   $var wire 1 "\ signA $end
+   $var wire 2 "] mantEffB $end
+   $var wire 2 "^ mantEffA $end
+   $var wire 1 "b isZeroB $end
+   $var wire 1 "c isZeroA $end
+   $var wire 2 "m expA $end
+   $var wire 2 "n expB $end
+   $var wire 3 #0 io_expOut $end
+   $var wire 1 #1 io_sign $end
+  $upscope $end
+  $scope module aligner $end
+   $var wire 3 % io_exps_7 $end
+   $var wire 3 & io_exps_6 $end
+   $var wire 3 ' io_exps_5 $end
+   $var wire 3 ( io_exps_4 $end
+   $var wire 3 , io_exps_3 $end
+   $var wire 3 - io_exps_2 $end
+   $var wire 3 / io_exps_1 $end
+   $var wire 3 0 io_exps_0 $end
+   $var wire 3 < expMax $end
+   $var wire 3 D shift $end
+   $var wire 3 J shift_6 $end
+   $var wire 3 K shift_5 $end
+   $var wire 3 M shift_7 $end
+   $var wire 3 N shift_2 $end
+   $var wire 3 O shift_1 $end
+   $var wire 3 P shift_4 $end
+   $var wire 3 Q shift_3 $end
+   $var wire 8 W mantExt_7 $end
+   $var wire 8 X mantExt_6 $end
+   $var wire 8 Y mantExt_5 $end
+   $var wire 8 Z mantExt_4 $end
+   $var wire 8 a mantExt_3 $end
+   $var wire 8 b mantExt_2 $end
+   $var wire 8 c mantExt_1 $end
+   $var wire 8 d shifted_1 $end
+   $var wire 8 e shifted_7 $end
+   $var wire 8 f shifted_6 $end
+   $var wire 8 h shifted_3 $end
+   $var wire 8 i shifted_2 $end
+   $var wire 8 j shifted_5 $end
+   $var wire 8 k shifted_4 $end
+   $var wire 8 "' shifted $end
+   $var wire 8 "1 mantExt $end
+   $var wire 1 "< io_signs_7 $end
+   $var wire 1 "> io_signs_6 $end
+   $var wire 1 "H io_signs_1 $end
+   $var wire 1 "I io_signs_0 $end
+   $var wire 1 "J io_signs_3 $end
+   $var wire 1 "K io_signs_2 $end
+   $var wire 1 "M io_signs_5 $end
+   $var wire 1 "O io_signs_4 $end
+   $var wire 8 #; io_aligned_2 $end
+   $var wire 8 #< io_aligned_3 $end
+   $var wire 8 #= io_aligned_0 $end
+   $var wire 8 #> io_aligned_1 $end
+   $var wire 8 #? io_aligned_6 $end
+   $var wire 8 #@ io_aligned_7 $end
+   $var wire 8 #A io_aligned_4 $end
+   $var wire 8 #B io_aligned_5 $end
+   $var wire 4 #D io_mants_2 $end
+   $var wire 4 #E io_mants_1 $end
+   $var wire 4 #F io_mants_0 $end
+   $var wire 4 #I io_mants_6 $end
+   $var wire 4 #J io_mants_5 $end
+   $var wire 4 #K io_mants_4 $end
+   $var wire 4 #L io_mants_3 $end
+   $var wire 4 #M io_mants_7 $end
+  $upscope $end
+  $scope module multipliers_6 $end
+   $var wire 4 S io_a $end
+   $var wire 4 T io_b $end
+   $var wire 1 [ signA $end
+   $var wire 2 _ mantEffB $end
+   $var wire 2 ` mantEffA $end
+   $var wire 1 v mantA $end
+   $var wire 1 w mantB $end
+   $var wire 4 ". io_mantOut $end
+   $var wire 2 "4 expB $end
+   $var wire 2 "6 expA $end
+   $var wire 1 "` signB $end
+   $var wire 1 "s isZeroA $end
+   $var wire 1 "t isZeroB $end
+   $var wire 1 "w io_sign $end
+   $var wire 3 #2 io_expOut $end
+  $upscope $end
+  $scope module multipliers_7 $end
+   $var wire 1 " io_sign $end
+   $var wire 2 ) mantEffB $end
+   $var wire 2 * mantEffA $end
+   $var wire 1 7 isZeroB $end
+   $var wire 1 : isZeroA $end
+   $var wire 1 > signA $end
+   $var wire 1 ? signB $end
+   $var wire 2 p expB $end
+   $var wire 2 q expA $end
+   $var wire 1 "! mantB $end
+   $var wire 1 "$ mantA $end
+   $var wire 4 "Y io_b $end
+   $var wire 4 "[ io_a $end
+   $var wire 4 "e io_mantOut $end
+   $var wire 3 #! io_expOut $end
+  $upscope $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b0000 "e
+b0000 #F
+b00 9
+b00000000 k
+01
+b0000 #E
+b00 8
+b00000000 j
+02
+b0000 "g
+03
+b0000 #G
+04
+b0000 "i
+b0000 #J
+b0000 #I
+b00000000 f
+b0000 #L
+b00000000 i
+07
+b0000 #K
+b00000000 h
+b0000 #N
+b00000000 c
+b0000 #M
+b00000000 b
+0:
+b0000 #P
+b00000000 e
+b0000 #O
+b00000000 d
+b0000 #R
+0>
+b0000 #T
+b00000000 a
+0?
+b0000 #S
+0@
+b0000 #V
+b00 )
+0A
+b0000 #W
+b00 *
+b00000000 s
+0I
+b00000000 r
+b0000 #
+b0000 !
+0U
+0[
+0\
+b000000000000 ##
+b00000000 Z
+b00000000 W
+b0000 .
+b00000000 Y
+b0000000000000 V
+b00000000 X
+0n
+0o
+b0000000000000 E
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0~
+b0000000000000 ;
+0"!
+b00 "k
+0"$
+0"%
+0"&
+0"*
+b00 "p
+0"+
+b00 "m
+b00 "l
+b00 "o
+b00 "n
+0"2
+0"3
+0"9
+0":
+0";
+0"<
+0"=
+b00 "]
+0">
+0"?
+0"@
+b00 "^
+0"A
+b00 #*
+0"B
+0"C
+b00 #,
+b00 #+
+0"E
+0#&
+0"F
+0#'
+0"G
+0#(
+0"H
+0"I
+0"J
+0"K
+0"L
+0"M
+0"N
+b00 #-
+0"O
+0#1
+b00 "4
+0"X
+b00 "6
+0"Z
+0"\
+0"_
+0"`
+b00 ")
+0"b
+b00 "(
+0"c
+0"d
+0"f
+0"h
+0"j
+b00 "-
+b00 ",
+0#Q
+0"r
+0"s
+0"t
+0#U
+0"u
+0"v
+0"w
+b000 D
+b000 O
+b00 q
+b000 N
+b00 p
+b000 Q
+b000 P
+b000 K
+b00 u
+b000 J
+b00 t
+b000 M
+b000 5
+b00 `
+b00 _
+b000 <
+b000 '
+b000 &
+b000 (
+b000 %
+b000 $
+b000 /
+b000 0
+b000 +
+b000 -
+b0000000000000 ""
+b000 ,
+b00 H
+b00 G
+b00000000000000 F
+b00 C
+b00 B
+b00000000000000 "#
+b000000000 6
+b00000000 "'
+b00000000 "1
+b000000000 g
+b00000000000 =
+b00000000 #/
+b00000000 #.
+b00000000 "S
+b00000000 "R
+b00000000 "Q
+b00000000 "P
+b00000000000 L
+b00000000 "W
+b00000000 "V
+b00000000 "U
+b00000000 "T
+b00000000 #<
+b00000000 #;
+b00000000 #@
+b00000000 #?
+b00000000 #>
+b00000000 #=
+b00000000 #B
+b00000000 #A
+b000 #2
+b00000000000 "q
+b00000000000 "~
+b00000000000 "}
+b00000000000 "|
+b00000000000 "{
+b00000000000 #H
+b00000000000 #C
+b00000000000 #%
+b00000000000 #$
+b00000000000 #"
+b0000 "/
+b0000 ".
+b0000 "0
+b0000 T
+b0000 "5
+b0000 R
+b0000 "7
+b0000 S
+b0000 ]
+b000000000000 "z
+b0000 #)
+b0000 ^
+b000000000000 "y
+b000000000000 "x
+b0000 l
+b0000 m
+b000 "8
+b0000 #4
+b0000 #3
+b0000 #6
+b0000 #5
+b000 "D
+0"
+b0000 #8
+b0000 #7
+b0000 "Y
+b0000 #:
+b0000 #9
+b000 #!
+b0000 "[
+b000 #0
+b0000 }
+b0000 "a
+b0000 #D
+$end
+#0
+1"b
+1"c
+1#'
+1#(
+1n
+1#Q
+1o
+1"2
+1"3
+1"s
+1"t
+1#U
+1"u
+17
+1y
+1:
+1{
+#1
+1"r
+1|
+#6
+b0011 !
+b0010 #
+b010 $
+b010 %
+b010 &
+b010 '
+b010 (
+b10 )
+b11 *
+b010 +
+b010 ,
+b010 -
+b0110 .
+b010 /
+b010 0
+12
+b010 5
+b011111110 6
+07
+b01 8
+b01 9
+0:
+b0000110000000 ;
+b010 <
+1A
+b01 B
+1"$
+b01 C
+b0000110000000 E
+b01100000 "'
+b01 "(
+b11 G
+b01 ")
+b10 H
+b11 ",
+b10 "-
+b0110 ".
+b0011 "/
+b0010 "0
+b01100000 "1
+0"2
+0"3
+b0110 R
+b01 "4
+b0011 S
+b0010 "5
+b0010 T
+b01 "6
+b0011 "7
+b010 "8
+b01100000 W
+1"9
+b01100000 X
+b01100000 Y
+b01100000 Z
+b0011 ]
+b0010 ^
+b010 #!
+b10 _
+b00001100000 #"
+b11 `
+b000011000000 ##
+b01100000 a
+b00001100000 #$
+b01100000 b
+b010 "D
+b00001100000 #%
+b01100000 c
+b01100000 d
+0#'
+b01100000 e
+1"G
+0#(
+b01100000 f
+b0110 #)
+b011111110 g
+b10 #*
+b01100000 h
+b11 #+
+b01100000 i
+b01 #,
+b01100000 j
+b01 #-
+b01100000 k
+b01111111 #.
+b0010 l
+b01111111 #/
+b0011 m
+b010 #0
+0n
+b01100000 "P
+0o
+b010 #2
+b01100000 "Q
+b01 p
+b0010 #3
+b01100000 "R
+b01 q
+b0010 #4
+b01100000 "S
+b01111111 r
+b0010 #5
+b01100000 "T
+b01111111 s
+b0010 #6
+b01100000 "U
+b11 t
+b0010 #7
+b01100000 "V
+b10 u
+b0010 #8
+b01100000 "W
+1v
+b0010 #9
+b0010 #:
+b0010 "Y
+b01100000 #;
+0y
+b0011 "[
+b01100000 #<
+b01100000 #=
+0{
+b10 "]
+b01100000 #>
+0|
+b11 "^
+b01100000 #?
+b0110 }
+1"_
+b01100000 #@
+b01100000 #A
+b0011 "a
+b01100000 #B
+0"b
+b00001100000 #C
+0"c
+b0110 #D
+b0110 #E
+b0110 "e
+b0110 #F
+b0110 #G
+1"f
+b0010 "g
+b0110 #I
+b0110 #J
+b0110 "i
+b0110 #K
+b0110 #L
+b10 "k
+b0110 #M
+b11 "l
+b0011 #N
+b01 "m
+b0011 #O
+b01 "n
+b0011 #P
+b01 "o
+b01 "p
+0#Q
+b0011 #R
+b0011 #S
+0"r
+b0011 #T
+0"s
+0"t
+0#U
+0"u
+b0011 #V
+b0011 #W
+b000011000000 "x
+b000011000000 "y
+b000011000000 "z
+b00001100000 "{
+b00001100000 "|
+b00001100000 "}
+b00001100000 "~
+#11
+b0000110000000 ""
+1"r
+b00001100000000 F
+b0000110000000 V
+1|
+#16
+0"r
+0|
+#21
+1"r
+b00001100000000 "#
+b01100000000 #H
+b01100000000 L
+1|
+b01100000000 =
+b01100000000 "q
+#26
+0"r
+0|
+#31
+1"r
+1|
+#36
+0"r
+0|

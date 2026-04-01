@@ -1,0 +1,31 @@
+Time resolution is 1 ps
+
+=== Vivado Sim — MXFP4DotProductEngine N=4 P=0 ===
+    outWidth=10 bit, combinedScale=9 bit
+
+[TEST 1] vecA=vecB=[1.0 x4] (0x2)
+  [PASS] dotProduct = 256
+  [PASS] combinedScale = 254
+
+[TEST 2] vecA=[1.0 x4] (0x2)  vecB=[-1.0 x4] (0xA)
+  [PASS] dotProduct = -256
+  [PASS] combinedScale = 254
+
+[TEST 3] vecA=[0.0 x4] (0x0)  vecB=[1.0 x4]
+  [PASS] dotProduct = 0
+
+[TEST 4] vecA=[1.5 x4] (0x3)  vecB=[1.0 x4] (0x2)
+  [PASS] dotProduct = 384
+
+[TEST 5] vecA=vecB=[2.0 x4] (0x4)
+  [PASS] combinedScale = 254
+  [PASS] dotProduct = 256 (> 0)
+
+[TEST 6] scaleA=130  scaleB=125
+  [PASS] combinedScale = 255
+
+=== Risultato: 9 PASS, 0 FAIL ===
+
+>>> ALL TESTS PASSED <<<
+
+$finish called at time : 66 ns : File "C:/Users/Fabio Testino/Desktop/tb_MXFP4_N4_P0_vivado.sv" Line 197

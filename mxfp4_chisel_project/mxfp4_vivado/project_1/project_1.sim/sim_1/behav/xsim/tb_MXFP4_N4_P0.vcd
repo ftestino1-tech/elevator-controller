@@ -1,0 +1,453 @@
+$date
+   Tue Mar 31 11:46:44 2026
+$end
+
+$version
+  2025.2
+  $dumpfile ("tb_MXFP4_N4_P0.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_MXFP4_N4_P0 $end
+$var reg 1 ! clock $end
+$var reg 1 " reset $end
+$var reg 4 # io_vecA_0 [3:0] $end
+$var reg 4 $ io_vecA_1 [3:0] $end
+$var reg 4 % io_vecA_2 [3:0] $end
+$var reg 4 & io_vecA_3 [3:0] $end
+$var reg 4 ' io_vecB_0 [3:0] $end
+$var reg 4 ( io_vecB_1 [3:0] $end
+$var reg 4 ) io_vecB_2 [3:0] $end
+$var reg 4 * io_vecB_3 [3:0] $end
+$var reg 8 + io_scaleA [7:0] $end
+$var reg 8 , io_scaleB [7:0] $end
+$var reg 10 - io_dotProduct [9:0] $end
+$var reg 9 . io_combinedScale [8:0] $end
+$var reg 32 / pass_count [31:0] $end
+$var reg 32 0 fail_count [31:0] $end
+$scope module dut $end
+$var wire 1 1 clock $end
+$var wire 1 2 reset $end
+$var wire 4 3 io_vecA_0 [3:0] $end
+$var wire 4 4 io_vecA_1 [3:0] $end
+$var wire 4 5 io_vecA_2 [3:0] $end
+$var wire 4 6 io_vecA_3 [3:0] $end
+$var wire 4 7 io_vecB_0 [3:0] $end
+$var wire 4 8 io_vecB_1 [3:0] $end
+$var wire 4 9 io_vecB_2 [3:0] $end
+$var wire 4 : io_vecB_3 [3:0] $end
+$var wire 8 ; io_scaleA [7:0] $end
+$var wire 8 < io_scaleB [7:0] $end
+$var wire 10 = io_dotProduct [9:0] $end
+$var wire 9 > io_combinedScale [8:0] $end
+$var wire 10 ? _adderTree_io_result [9:0] $end
+$var wire 8 @ _aligner_io_aligned_0 [7:0] $end
+$var wire 8 A _aligner_io_aligned_1 [7:0] $end
+$var wire 8 B _aligner_io_aligned_2 [7:0] $end
+$var wire 8 C _aligner_io_aligned_3 [7:0] $end
+$var wire 1 D _multipliers_3_io_sign $end
+$var wire 3 E _multipliers_3_io_expOut [2:0] $end
+$var wire 4 F _multipliers_3_io_mantOut [3:0] $end
+$var wire 1 G _multipliers_2_io_sign $end
+$var wire 3 H _multipliers_2_io_expOut [2:0] $end
+$var wire 4 I _multipliers_2_io_mantOut [3:0] $end
+$var wire 1 J _multipliers_1_io_sign $end
+$var wire 3 K _multipliers_1_io_expOut [2:0] $end
+$var wire 4 L _multipliers_1_io_mantOut [3:0] $end
+$var wire 1 M _multipliers_0_io_sign $end
+$var wire 3 N _multipliers_0_io_expOut [2:0] $end
+$var wire 4 O _multipliers_0_io_mantOut [3:0] $end
+$scope module multipliers_0 $end
+$var wire 4 3 io_a [3:0] $end
+$var wire 4 7 io_b [3:0] $end
+$var wire 1 M io_sign $end
+$var wire 3 N io_expOut [2:0] $end
+$var wire 4 O io_mantOut [3:0] $end
+$upscope $end
+$scope module multipliers_1 $end
+$var wire 4 4 io_a [3:0] $end
+$var wire 4 8 io_b [3:0] $end
+$var wire 1 J io_sign $end
+$var wire 3 K io_expOut [2:0] $end
+$var wire 4 L io_mantOut [3:0] $end
+$upscope $end
+$scope module multipliers_2 $end
+$var wire 4 5 io_a [3:0] $end
+$var wire 4 9 io_b [3:0] $end
+$var wire 1 G io_sign $end
+$var wire 3 H io_expOut [2:0] $end
+$var wire 4 I io_mantOut [3:0] $end
+$upscope $end
+$scope module multipliers_3 $end
+$var wire 4 6 io_a [3:0] $end
+$var wire 4 : io_b [3:0] $end
+$var wire 1 D io_sign $end
+$var wire 3 E io_expOut [2:0] $end
+$var wire 4 F io_mantOut [3:0] $end
+$upscope $end
+$scope module aligner $end
+$var wire 1 M io_signs_0 $end
+$var wire 1 J io_signs_1 $end
+$var wire 1 G io_signs_2 $end
+$var wire 1 D io_signs_3 $end
+$var wire 3 N io_exps_0 [2:0] $end
+$var wire 3 K io_exps_1 [2:0] $end
+$var wire 3 H io_exps_2 [2:0] $end
+$var wire 3 E io_exps_3 [2:0] $end
+$var wire 4 O io_mants_0 [3:0] $end
+$var wire 4 L io_mants_1 [3:0] $end
+$var wire 4 I io_mants_2 [3:0] $end
+$var wire 4 F io_mants_3 [3:0] $end
+$var wire 8 @ io_aligned_0 [7:0] $end
+$var wire 8 A io_aligned_1 [7:0] $end
+$var wire 8 B io_aligned_2 [7:0] $end
+$var wire 8 C io_aligned_3 [7:0] $end
+$var wire 3 P _expMax_T_1 [2:0] $end
+$var wire 3 Q _expMax_T_3 [2:0] $end
+$var wire 3 R expMax [2:0] $end
+$var wire 8 S shifted [7:0] $end
+$var wire 8 T shifted_1 [7:0] $end
+$var wire 8 U shifted_2 [7:0] $end
+$var wire 8 V shifted_3 [7:0] $end
+$upscope $end
+$scope module adderTree $end
+$var wire 8 @ io_inputs_0 [7:0] $end
+$var wire 8 A io_inputs_1 [7:0] $end
+$var wire 8 B io_inputs_2 [7:0] $end
+$var wire 8 C io_inputs_3 [7:0] $end
+$var wire 10 ? io_result [9:0] $end
+$var wire 9 W _GEN [8:0] $end
+$var wire 9 X _GEN_0 [8:0] $end
+$upscope $end
+$scope module scaleIntegrator $end
+$var wire 10 ? io_treeSum [9:0] $end
+$var wire 8 ; io_scaleA [7:0] $end
+$var wire 8 < io_scaleB [7:0] $end
+$var wire 10 = io_dotProduct [9:0] $end
+$var wire 9 > io_combinedScale [8:0] $end
+$upscope $end
+$upscope $end
+$scope task check_val $end
+$upscope $end
+$scope task check_positive $end
+$upscope $end
+$scope task set_vec $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+b10 #
+b10 $
+b10 %
+b10 &
+b10 '
+b10 (
+b10 )
+b10 *
+b1111111 +
+b1111111 ,
+b100000000 -
+b11111110 .
+b0 /
+b0 0
+01
+12
+b10 3
+b10 4
+b10 5
+b10 6
+b10 7
+b10 8
+b10 9
+b10 :
+b1111111 ;
+b1111111 <
+b100000000 =
+b11111110 >
+b100000000 ?
+b1000000 @
+b1000000 A
+b1000000 B
+b1000000 C
+0D
+b10 E
+b100 F
+0G
+b10 H
+b100 I
+0J
+b10 K
+b100 L
+0M
+b10 N
+b100 O
+b10 P
+b10 Q
+b10 R
+b1000000 S
+b1000000 T
+b1000000 U
+b1000000 V
+b10000000 W
+b10000000 X
+$end
+
+#5000
+1!
+11
+
+#6000
+0"
+02
+
+#10000
+0!
+01
+
+#15000
+1!
+11
+
+#16000
+b1010 '
+b1010 (
+b1010 )
+b1010 *
+b1100000000 -
+b10 /
+b1010 7
+b1010 8
+b1010 9
+b1010 :
+b1100000000 =
+b1100000000 ?
+b11000000 @
+b11000000 A
+b11000000 B
+b11000000 C
+1D
+1G
+1J
+1M
+b110000000 W
+b110000000 X
+
+#20000
+0!
+01
+
+#25000
+1!
+11
+
+#26000
+b0 #
+b0 $
+b0 %
+b0 &
+b10 '
+b10 (
+b10 )
+b10 *
+b0 -
+b100 /
+b0 3
+b0 4
+b0 5
+b0 6
+b10 7
+b10 8
+b10 9
+b10 :
+b0 =
+b0 ?
+b0 @
+b0 A
+b0 B
+b0 C
+0D
+b1 E
+b0 F
+0G
+b1 H
+b0 I
+0J
+b1 K
+b0 L
+0M
+b1 N
+b0 O
+b1 P
+b1 Q
+b1 R
+b0 S
+b0 T
+b0 U
+b0 V
+b0 W
+b0 X
+
+#30000
+0!
+01
+
+#35000
+1!
+11
+
+#36000
+b11 #
+b11 $
+b11 %
+b11 &
+b110000000 -
+b101 /
+b11 3
+b11 4
+b11 5
+b11 6
+b110000000 =
+b110000000 ?
+b1100000 @
+b1100000 A
+b1100000 B
+b1100000 C
+b10 E
+b110 F
+b10 H
+b110 I
+b10 K
+b110 L
+b10 N
+b110 O
+b10 P
+b10 Q
+b10 R
+b1100000 S
+b1100000 T
+b1100000 U
+b1100000 V
+b11000000 W
+b11000000 X
+
+#40000
+0!
+01
+
+#45000
+1!
+11
+
+#46000
+b100 #
+b100 $
+b100 %
+b100 &
+b100 '
+b100 (
+b100 )
+b100 *
+b100000000 -
+b110 /
+b100 3
+b100 4
+b100 5
+b100 6
+b100 7
+b100 8
+b100 9
+b100 :
+b100000000 =
+b100000000 ?
+b1000000 @
+b1000000 A
+b1000000 B
+b1000000 C
+b100 E
+b100 F
+b100 H
+b100 I
+b100 K
+b100 L
+b100 N
+b100 O
+b100 P
+b100 Q
+b100 R
+b1000000 S
+b1000000 T
+b1000000 U
+b1000000 V
+b10000000 W
+b10000000 X
+
+#50000
+0!
+01
+
+#55000
+1!
+11
+
+#56000
+b10 #
+b10 $
+b10 %
+b10 &
+b10 '
+b10 (
+b10 )
+b10 *
+b10000010 +
+b1111101 ,
+b100000000 -
+b11111111 .
+b1000 /
+b10 3
+b10 4
+b10 5
+b10 6
+b10 7
+b10 8
+b10 9
+b10 :
+b10000010 ;
+b1111101 <
+b100000000 =
+b11111111 >
+b100000000 ?
+b1000000 @
+b1000000 A
+b1000000 B
+b1000000 C
+b10 E
+b10 H
+b10 K
+b10 N
+b10 P
+b10 Q
+b10 R
+b1000000 S
+b1000000 T
+b1000000 U
+b1000000 V
+b10000000 W
+b10000000 X
+
+#60000
+0!
+01
+
+#65000
+1!
+11
+
+#66000
+b1001 /

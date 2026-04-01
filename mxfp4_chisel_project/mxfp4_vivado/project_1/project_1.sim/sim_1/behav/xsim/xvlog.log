@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fabio Testino/Desktop/MXFP4DotProductEngine_N4_P0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MXFP4Multiplier
+INFO: [VRFC 10-311] analyzing module ExponentAligner
+INFO: [VRFC 10-311] analyzing module AdderTree
+INFO: [VRFC 10-311] analyzing module SharedScaleIntegrator
+INFO: [VRFC 10-311] analyzing module MXFP4DotProductEngine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Fabio Testino/Desktop/tb_MXFP4_N4_P0_vivado.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_MXFP4_N4_P0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fabio Testino/Desktop/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

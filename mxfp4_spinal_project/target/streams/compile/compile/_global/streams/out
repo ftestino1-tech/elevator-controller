@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/fabio_testino/mxfp4_spinal_project/src/main/scala/mxfp4/MXFP4DotProductEngine.scala:146:26: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.collection.IndexedSeq[spinal.core.SInt][0m
+[0m[[0m[31merror[0m] [0m[0m required: Seq[spinal.core.SInt][0m
+[0m[[0m[31merror[0m] [0m[0m  io.result := buildTree(extInputs, 0)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
