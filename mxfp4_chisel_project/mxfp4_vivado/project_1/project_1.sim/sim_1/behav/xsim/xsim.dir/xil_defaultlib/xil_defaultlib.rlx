@@ -1,7 +1,0 @@
-0.7
-2020.2
-Nov 14 2025
-19:37:27
-C:/Users/Fabio Testino/Desktop/MXFP4DotProductEngine_N4_P0.sv,1774949665,systemVerilog,,C:/Users/Fabio Testino/Desktop/tb_MXFP4_N4_P0_vivado.sv,,AdderTree;ExponentAligner;MXFP4DotProductEngine;MXFP4Multiplier;SharedScaleIntegrator,,uvm,../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
-C:/Users/Fabio Testino/Desktop/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/Fabio Testino/Desktop/tb_MXFP4_N4_P0_vivado.sv,1774950029,systemVerilog,,,,tb_MXFP4_N4_P0,,uvm,../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
