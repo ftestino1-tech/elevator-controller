@@ -1,0 +1,16 @@
+[dumpfile] "/home/fabio_testino/mxfp4_amaranth_project/tb/test2.vcd"
+[dumpfile_size] 5647
+[treeopen] top.
+@22
+bench.top.vecA_0[3:0]
+bench.top.vecA_1[3:0]
+bench.top.vecA_2[3:0]
+bench.top.vecA_3[3:0]
+bench.top.vecB_0[3:0]
+bench.top.vecB_1[3:0]
+bench.top.vecB_2[3:0]
+bench.top.vecB_3[3:0]
+bench.top.scaleA[7:0]
+bench.top.scaleB[7:0]
+bench.top.dotProduct[9:0]
+bench.top.combinedScale[8:0]
